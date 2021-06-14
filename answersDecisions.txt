@@ -35,7 +35,7 @@ function because we needed the output to be a value between 0 and 1.
 6) Outliers of points which didn't follow the trend such as having high
 blood pressure, diabetes and being old but not being succeptable to 
 heart failure.
-7) 76,31 seconds
+7) 76,01 seconds
 
 
 Logistic Regression:
@@ -55,11 +55,16 @@ relationship/correlation.
 
 Decision Tree:
 
-1)
-2)
-3)
-4)
+1) max tree depth = 5. (can't have the depth of our tree be more than
+the number of features used)
+minimum split samples = 10. (to avoid overfitting for specific data
+points we set it not to split on data points less than 10) 
+2) No regularization was used because model didn't overfit thus
+regularising wasn't neccessary.
+3) not applicable, the decision tree algorithm (ID3) doesn't have basis 
+functions.
+4) not applicable, ID3 doesn't use gradient descent.
 6) Outliers of points which didn't follow the trend such as having high
 blood pressure, diabetes and being old but not being succeptable to 
 heart failure.
-7) 2.53 seconds
+7) 1.52 seconds
