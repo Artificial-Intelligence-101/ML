@@ -1,0 +1,65 @@
+Questions:
+
+1) hyperparameters chosen and why
+2) value of lambda if regularised and why
+3) basis functions and why
+4) gradient descent type and why
+5) how well would you do if randomly guessed answers
+6) data points our algorithm struggled with
+7) time for our algrithm to run
+8) the best possible performance you can achieve on the dataset
+
+
+Neural Network:
+
+1) learning rate = 0.01, epochs = 1000, epsilon = 0.001.
+number of input nodes = 5. (we had to input 5 features)
+number of hidden layers = 2. (validation showed that increasing the 
+hidden layers to more than 2 caused overfitting and lead to poor
+results on the testing data)
+number of nodes in hidden layers = 5. (a node for each feature)
+number of outputs = 1. (only need to know if alive/dead)
+The learning rate was chosen to be small enough (2 decimal places) so 
+that we were less likely miss the optimum (values between 0.01-0.09 
+were tried and 0.01 worked the best). the number of epochs were chosen
+because most algorithms chose 1000 as their standard number of epochs,
+also changing the number of epochs once the learning rate was set had no
+notable affects. We would have been satisfied with results correct to 2
+decimal places so we chose an epsilon accurate to 2 decimal places.
+2) No regularization was used because model didn't overfit when number
+of hidden layers wasn't above 2 thus regularising wasn't neccessary.
+3) Didn't have basis functions but did have activation functions because
+it's a neural network. The activation function used was a sigmoid 
+function because we needed the output to be a value between 0 and 1.
+4) Stochastic Gradient Descent
+6) Outliers of points which didn't follow the trend such as having high
+blood pressure, diabetes and being old but not being succeptable to 
+heart failure.
+7) 76,31 seconds
+
+
+Logistic Regression:
+
+1) The closed form solution was used so therefore there are no 
+hyperparameters. This type of solution was used because it was feasable
+on our data set and would lead to a more accurate result than an 
+iterative solution.
+2) No regularization was used because model didn't overfit thus
+regularising wasn't neccessary.
+3) The basis function used was a straight line because a scatter plot
+of our features versus our target showed that there was a linear 
+relationship/correlation.
+4) Not applicable, closed for solution was used.
+6) Data points having high creatinine_phosphokinase levels but surviving.
+7) 0.21 seconds
+
+Decision Tree:
+
+1)
+2)
+3)
+4)
+6) Outliers of points which didn't follow the trend such as having high
+blood pressure, diabetes and being old but not being succeptable to 
+heart failure.
+7) 2.53 seconds
