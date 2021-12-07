@@ -1,2 +1,0 @@
-*Loss function plot as model is training
-*histogram with pairs of features
